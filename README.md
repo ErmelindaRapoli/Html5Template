@@ -5,6 +5,16 @@ This template was created by building a web site, where I used the resources ret
 I decided to put together the major components of the layout and create a basic structure, which can also be used for other sites.
 # Installation
 You could run this template, using any browser.
+# Description of template
+<ul>
+<li>Html5, CSS3, Javascript, JQuery;</li>
+<li>all pages are composed by a menu, a main content, a footer, a line for copyright;</li>
+<li>all pages are device responsive;</li>
+<li>3 example pages: home, gallery and contact</li>
+<li>Home page shows a slider presentation with caption;</li>
+<li>Gallery page shows an animated filtering and sorting image gallery, divided into album (you can change as you prefer the filtering and sorting mode);</li>
+<li>Contact page shows a google map and a form for direct contact. The form fields are validate via jquery validate function. You can write by your own the function implementing sending mail.</li>
+</ul>
 # References
 My references on the web:
 <ul>
