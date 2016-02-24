@@ -1,0 +1,126 @@
+/* 
+    Created on : 8-feb-2016, 19.23.40
+    Author     : RapoliE
+*/
+
+@charset "UTF-8";
+/* CSS Document */
+*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { content: ''; display: table; }
+.clearfix:after { clear: both; }
+
+body{
+margin:0;
+padding:0;	
+font-family: 'Lato', sans-serif;
+}
+#container{
+width:100%;
+margin:0 auto;
+overflow:hidden;
+height:100%;
+}
+header{
+width:100%;
+margin:0 auto;
+}
+#logoM img{
+    width: 80%;
+    float: right;
+}
+.menu{
+width:400px;
+position:absolute;
+left:-400px;
+background:rgba(0,0,0,0.8);	
+z-index: 999;
+line-height: initial;
+}
+.menu ul{
+	width:100%;
+	float:left;
+	margin-top:100px;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+.menu ul li{
+	margin-top:10px;	
+	border-left: 10px solid transparent;
+}
+
+.menu ul li:first-child{
+margin-top:100px;
+}
+.menu ul li:hover{
+	background:#fff;
+	border-left:10px solid #f06;
+}
+.menu ul li a{
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 0;
+	display: block;
+	font-size: 3em;
+}
+
+.menu ul li:hover a{
+color:#F06;
+}
+
+
+/*			MENUBUTTON			*/
+#menuButton{
+	font-size: 3em;
+	color:#071D71;;
+	margin:0px 10px;
+float:left;
+}
+#menuButton a{
+	cursor:pointer;
+	transition:all 0.2s;
+}
+#menuButton a:hover{
+	color:#f06;
+	
+}
+/*			CLOSEBUTTON		*/
+
+
+.closeButton{
+	font-size:3em;
+	color:#fff;
+	position:absolute;
+	left:290px;
+	top:30px;
+	
+}
+.closeButton a:hover{
+	color:#333;
+	cursor:pointer;
+	
+}
+/*			MAIN	*/
+.main{
+width:100%;
+	margin:0 auto;
+}
+
+.main h1{
+	text-align:center;
+	font-size:7em;
+	color:rgba(255,255,255,0.8);
+	line-height:400px;
+	font-weight:bold;
+	font-family: 'Montserrat', sans-serif;
+}
+.icon-heart{
+font-size:0.8em;	
+}
+header {
+    width: auto;
+    float: right;
+}
+
+

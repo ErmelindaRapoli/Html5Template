@@ -1,0 +1,120 @@
+/*
+    Created on : feb 2016
+    Author     : Rapoli Ermelinda - www.ermelindarapoli.it
+*/
+
+#slider{
+    width: 100%;
+    background-image: url('../images/slideshow/2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    float: left;
+}
+
+
+@-webkit-keyframes op {    
+   0%, 50%   { opacity: 0.6  } 
+   70%  { opacity: 0.9}
+
+    100% { opacity: 1 } 
+}
+@-moz-keyframes op {
+    0%   { opacity: 1  } 		
+    100% { opacity: 0 } 
+}
+@-webkit-keyframes op2 {    
+    0%, 50%   { opacity: 1  } 
+    70% { opacity: 0 }
+    100% { opacity: 0 } 
+}
+@-moz-keyframes op2 {    
+    0%, 50%   { opacity: 1  } 
+    70% { opacity: 0 }
+    100% { opacity: 0 } 
+}
+#anim2{
+    -webkit-animation: op2 8s infinite alternate cubic-bezier(0.42, 0.0, 0.58, 1.0) running;
+    -moz-animation: op2 8s infinite alternate 2s cubic-bezier(0.42, 0.0, 0.58, 1.0);
+}
+#anim3{
+    -webkit-animation: op 8s infinite alternate cubic-bezier(0.42, 0.0, 0.58, 1.0) running;
+    -moz-animation: op 8s infinite alternate 10s cubic-bezier(0.42, 0.0, 0.58, 1.0);
+    position: absolute;
+}
+.caption {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.8em;
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.caption img {
+    float: left;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    border: none;
+}
+
+.caption span {
+    float: left;
+    margin: 0;
+    padding: 1em;
+    width: 100%;
+    color: #dedede;
+
+    background: #222; /* browser che non supportano rgba */
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.caption span strong {
+    font-weight: bold;
+    //font-size: 1.5em;
+    text-transform: uppercase;
+    display: block;
+    padding-bottom: 1em;
+}
+
+@-webkit-keyframes op3 {    
+    0%   { opacity: 0  }
+    100% { opacity: 1 } 
+}
+@-moz-keyframes op3 {    
+    0%   { opacity: 0  }
+    100% { opacity: 1 } 
+}
+#banner{
+    -webkit-animation: op3 1s ease-in-out running;
+    -moz-animation: op3 0.5s ease-in-out;
+}
+#contents{
+    -webkit-animation: op3 1s ease-in-out running;
+    -moz-animation: op3 0.5s ease-in-out;
+}
+
+#footer{
+    -webkit-animation: op3 1s ease-in-out running;
+    -moz-animation: op3 0.6s ease-in-out;
+}
+
+
+@media screen and (min-width:320px) and (max-width:720px) {
+    .caption span strong {
+        font-size: 0.8em;
+        padding-bottom: 0.5em;
+    }
+
+    .caption span {
+        padding: 0.5em;
+    }
+
+    .caption {
+        font-size: 1em;
+    }
+}
