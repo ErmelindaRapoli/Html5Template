@@ -166,6 +166,9 @@ background-position: center top !important;
   left: 5% !important;
   width: 90%;
 }
+.work-item .overlay a {
+display:none;
+}
 
 /* team */
 
@@ -251,6 +254,9 @@ background-position: center top !important;
 .work-item {
   left: inherit !important;
   width: 50%;
+}
+.work-item .overlay a {
+display:none;
 }
 
 }

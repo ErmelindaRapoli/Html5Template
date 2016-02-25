@@ -202,15 +202,15 @@
                     },
                     messages: {
                         name: {
-                            required: "Nome richiesto",
-                            minlength: "almeno 2 caratteri"
+                            required: "Name required",
+                            minlength: "at least 2 chars"
                         },
                         email: {
-                            required: "Email richiesta"
+                            required: "Email required"
                         },
                         message: {
-                            required: "Messaggio richiesto. Scrivi qualcosa",
-                            minlength: "vuoi inviare?"
+                            required: "Message required",
+                            minlength: "Do you want send?"
                         }
                     },
                     submitHandler: function(form) {
@@ -239,8 +239,8 @@
         <script src="js/js/cookiechoices.js"></script>
         <script>
             document.addEventListener('DOMContentLoaded', function(event) {
-                cookieChoices.showCookieConsentBar('Questo sito utilizza cookie di profilazione propri o di terze parti.',
-                        'Accetto', 'Maggiori Informazioni', 'privacy.html');
+                cookieChoices.showCookieConsentBar('This site uses own or third-party profiling cookies.',
+                        'Accept', 'More info', 'privacy.html');
             });
         </script>
     </body>
